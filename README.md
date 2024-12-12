@@ -8,13 +8,16 @@
 
 > "Inside you have strong root. No need nothing except what inside you to grow."
 
+```markdown
   🥢🧑
-🍃  🥋 Train (syntax) trees for your [🎋 WikiBonsai](https://github.com/wikibonsai/wikibonsai) digital garden.
+🍃  🥋
+```
+
+Train (syntax) trees for your [🎋 WikiBonsai](https://github.com/wikibonsai/wikibonsai) digital garden.
 
 <p align="center">
   <img src="./static/img/demo/demo-sentence-tree.png"/>
 </p>
 
-### Why Use This?
+### [Why Use This?](https://x.com/wibomd/status/1867336872865018340)
 
-<blockquote class="twitter-tweet"><p lang="und" dir="ltr">1/n <a href="https://t.co/wzScEhhxHD">pic.twitter.com/wzScEhhxHD</a></p>&mdash; WikiBonsai (@wibomd) <a href="https://twitter.com/wibomd/status/1867336872865018340?ref_src=twsrc%5Etfw">December 12, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
