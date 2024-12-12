@@ -1,15 +1,15 @@
 <script lang='ts'>
   import type { PageData } from './$types'
   import { isMarkdown, llm, resultMkdn, resultMkmp, resultTree, systemApiKeys } from '$lib/util/store';
+  import { appendStyles } from '$lib/util/prompt';
   import Loader from "$lib/components/element/Loader.svelte";
   import Logo from '$lib/components/element/Logo.svelte';
-  import MarkMap from "$lib/components/component/MarkMap.svelte";
+  // import MarkMap from "$lib/components/component/MarkMap.svelte";
   import Prompt from "$lib/components/component/Prompt.svelte";
   import SentenceTree from "$lib/components/component/SentenceTree.svelte";
   import Theme from '$lib/components/element/Theme.svelte';
   import ToolBar from "$lib/components/component/ToolBar.svelte";
-  import Tree from "$lib/components/component/Tree.svelte";
-  import { appendStyles } from '$lib/util/prompt';
+  // import Tree from "$lib/components/component/Tree.svelte";
 
 
   export let data: PageData;
