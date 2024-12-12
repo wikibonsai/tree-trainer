@@ -66,14 +66,6 @@
             <SentenceTree markdown={$resultMkdn}
                           height={65}
                           width={75} />
-            <!-- <Tree markdown={$resultMkdn}
-                  bind:treeContainer={$resultTree}
-                  height={75}
-                  width={75} /> -->
-            <!-- <MarkMap markdown={$resultMkdn}
-                     bind:markmap={$resultMkmp}
-                     height={75}
-                     width={75} /> -->
           {/if}
           <div class="pin-logo">
             <Logo which={'wikibonsai'} wTxt={true} size={'small'}/>
