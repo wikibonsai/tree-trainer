@@ -1,0 +1,182 @@
+/* src: https://github.com/wikibonsai/jekyll-wikibonsai/blob/ddc978d53c2eb40f018060207a0760f6e2f42cb4/_data/themes.yml */
+
+/* base */
+
+:root {
+  /* dimensions */
+
+  --toolbar-top-height: 40px; /* width should be 100vw minus the width of the side toolbar */
+  --toolbar-side-width: 40px; /* height should be 100vh */
+
+  /* depth (z-indices) */
+
+
+  /* colors */
+
+  --hover-color: #22c55e;
+  --btn-color: #22c55e;
+  --btn-color--hover: #16a34a;
+
+  /* light */
+  --text-color: #5c5962;
+  --accent-text-color: #918f96;
+  --background-color: #e4f3ea;
+  --background-accent-color: #b9d2c4;
+  --box-background: #fff;
+  --accent-color-light: #D1ECDC;
+  --accent-color-dark: #b6d1c1;
+  --textbox-color: #f7f6eb;
+  --link-color: #01946a;
+  --branch-light: #8C6239;
+  --branch-dark: #36290e;
+  --leaf: #31AF31;
+  --dirt: #f7f6eb;
+}
+
+/* default themes */
+
+html[data-theme='light'] {
+  --text-color: #5c5962;
+  --accent-text-color: #918f96;
+  --background-color: #e4f3ea;
+  --box-background: #fff;
+  --accent-color-light: #D1ECDC;
+  --accent-color-dark: #b6d1c1;
+  --textbox-color: #f7f6eb;
+  --link-color: #01946a;
+  --branch-light: #8C6239;
+  --branch-dark: #36290e;
+  --leaf: #31AF31;
+  --dirt: #f7f6eb;
+}
+
+html[data-theme='dark'] {
+  --text-color: #e1e8e3;
+  --accent-text-color: #959f99;
+  --background-color: #27262b;
+  --background-accent-color: #323138;
+  --accent-color-light: #44434d;
+  --accent-color-dark: #313036;
+  --box-background: #44434d;
+  --textbox-color: #2f3038;
+  --link-color: #00CC92;
+  --branch-light: #2d565e;
+  --branch-dark: #1d1d1f;
+  --leaf: #31AF31;
+  --dirt: #2f3038;
+}
+
+/* garden themes */
+
+html[data-theme='day-garden'] {
+  --text-color: #5c5962;
+  --accent-text-color: #918f96;
+  --background-color: #e4f3ea;
+  --box-background: #fff;
+  --accent-color-light: #D1ECDC;
+  --accent-color-dark: #b6d1c1;
+  --textbox-color: #f7f6eb;
+  --link-color: #01946a;
+  --branch-light: #8C6239;
+  --branch-dark: #36290e;
+  --leaf: #31AF31;
+  --dirt: #f7f6eb;
+}
+
+html[data-theme='night-sky'] {
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color) !important;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+code {
+  background-color: var(--accent-color-light);
+}
+
+select {
+  flex-grow: 1;
+}
+
+/* uniform element patterns */
+
+/*******/
+/* btn */
+/*******/
+
+.btn {
+  background: var(--btn-color);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+}
+
+.btn:hover {
+  background: var(--btn-color--hover);
+}
+
+.btn-close {
+  fill: var(--text-color);
+}
+
+/* utility buttons (for toolbars etc.) */
+
+.util-btn {
+  min-width: 2.5rem;
+  border-color: var(--accent-color-dark);
+  border-radius: 0.25rem;
+  border-width: 1px;
+  padding: 0.5rem;
+  margin: 0.25rem;
+}
+
+.util-btn:hover {
+  cursor: pointer;
+  border-color: var(--accent-color-light);
+}
+
+/* image buttons */
+
+.img-btn {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-btn:hover {
+  transform: scale(1.15);
+  /* box-shadow: 0 4px 8px var(--hover-color); */
+}
+
+/* box */
+
+.box-border {
+  border-color: var(--accent-color-light);
+  border-width: 2px;
+}
+
+/* hide scrollbar */
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* hide actual scrollbar */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* fix: toolbar rendering breaks when this is removed */
+
+.modal {
+  position: fixed;
+}
