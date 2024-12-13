@@ -124,14 +124,7 @@ graph TB
       ADJ
       N2
   end
-  
-  %% Styling
-  linkStyle default interpolate basis stroke:#333,stroke-width:2px
-  classDef transparent fill:none,stroke:none
-  classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px,color:#333
-  classDef phrase fill:#f9f9f9,stroke:#8C6239,stroke-width:2px,color:#333
-  classDef word fill:white,stroke:#31AF31,stroke-width:2px,color:#333
-  
+
   class S,MC,NP1,VP,PP,NP2 phrase
   class DET1,N1,V,P,DET2,ADJ,N2 word
   class LEAVES transparent
