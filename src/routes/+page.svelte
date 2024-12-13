@@ -61,13 +61,16 @@
         <div class="result-box box-border"
              class:extend-bottom-for-label-row={$isMarkdown}
              style="display: {($resultMkdn === '') ? 'none' : 'flex'}">
-          {#if $isMarkdown}
-            <!-- {@html displayMkdn} -->
-            {@html appendStyles($resultMkdn)}
+          {#if $resultMkdn.includes('You need to provide an API key')}
+            <div class="error-message">{$resultMkdn}</div>
           {:else}
-            <SentenceTree markdown={$resultMkdn}
-                          height={65}
-                          width={75} />
+            {#if $isMarkdown}
+              {@html appendStyles($resultMkdn)}
+            {:else}
+              <SentenceTree markdown={$resultMkdn}
+                            height={65}
+                            width={75} />
+            {/if}
           {/if}
           <div class="pin-logo">
             <Logo which={'wikibonsai'} wTxt={true} size={'small'}/>
@@ -167,6 +170,13 @@
     margin-left: 1rem;
     margin-right: 1rem;
     display: none;
+  }
+
+  .error-message {
+    color: var(--text-color);
+    text-align: center;
+    padding-bottom: 3rem;
+    font-size: 1.1rem;
   }
 
   @media (min-width: 768px) {
