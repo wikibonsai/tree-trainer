@@ -24,7 +24,7 @@ export async function trainTree(userMessage: string, opts: Opts): Promise<string
   try {
     validate(opts.llm);
   } catch (e) {
-    console.error('germinate error: ', e);
+    console.error('tree-train error: ', e);
     return e.message;
   }
   const seedPrompt: string = SYSTEM_PROMPT
