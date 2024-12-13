@@ -107,7 +107,6 @@ graph TB
 
 <style>
   .sentence-tree-container {
-    background-color: var(--box-background);
     border-radius: 0.5rem;
     padding: 1rem;
     overflow: hidden;
