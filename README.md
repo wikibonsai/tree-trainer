@@ -6,7 +6,7 @@
   <img src="./static/img/logo/mr-miyagi.svg" width="150" height="150"/>
 </p>
 
-> "Inside you have strong root. No need nothing except what inside you to grow."
+> "Inside you have strong root. No need nothing except what inside you to [grow](tree-trainer.netlify.app/)."
 
 ```markdown
   🥢🧑
